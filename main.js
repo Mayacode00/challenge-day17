@@ -14,7 +14,7 @@ function calculateResults(e) {
   const convertedHeight = heightInputed * heightInputed;
   const x = parseFloat(weight.value);
 
-  const resultCalculated = convertedHeight / x;
+  const resultCalculated = x / convertedHeight;
 
   if (resultCalculated) {
     result.value = resultCalculated.toFixed(2);
